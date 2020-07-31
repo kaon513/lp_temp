@@ -1,0 +1,61 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color:#333;
+
+body{
+    font:100% $font-stack;
+    color:$primary-color;
+}
+
+.container{
+    width: 100%;
+}
+
+article[role="main"]{
+    float:left;
+    width: 600px / 960px * 100%;
+}
+
+aside[role="complementary"]{
+    float: right;
+    width: 300px / 960px * 100%;
+}
+
+$width:640px;
+
+main{
+    $padding: 10px;
+    width: $width - ($padding *2);
+    padding: $padding;
+}
+
+.lighten{
+    color:lighten( #ff0000, 30%);
+}
+
+.round{
+    content:round(1.5); //round :四捨五入
+    content:ceil(1.5); //ceol :切り上げ
+    content:floor(1.5); //floor :切り捨て
+}
+
+.color{
+    color:rgba(#f00, 0.5);
+}
+
+.color{
+    color:mix(#f00, #00f, 0.5);
+}
+
+$items:"apple","banana","orange";
+.item::after{
+    content:nth($items,2);
+}
+
+@function custom_function($parameter){
+    $return_value : $parameter + ",world!";
+    @return $return_value;
+}
+
+.sample{
+    content: custom_function("hello");
+}

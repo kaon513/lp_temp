@@ -1,0 +1,50 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 62.5%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 31.25%;
+}
+
+main {
+  width: 620px;
+  padding: 10px;
+}
+
+.lighten {
+  color: #ff9999;
+}
+
+.round {
+  content: 2;
+  content: 2;
+  content: 1;
+}
+
+.color {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+.color {
+  color: #0100fe;
+}
+
+.item::after {
+  content: "banana";
+}
+
+.sample {
+  content: "hello,world!";
+}
+/*# sourceMappingURL=test.css.map */

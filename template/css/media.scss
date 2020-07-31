@@ -1,0 +1,102 @@
+/*縦モバイルサイズ*/
+@media only screen and (max-width:540px) {
+  .main {
+    background-color: navy;
+  }
+}
+
+/*横モバイルサイズ*/
+/* @media (min-width:540px) and (max-width:720px){ */
+@media (min-width:540px) {
+  .main {
+    background-color: green;
+  }
+
+}
+
+/*タブレットサイズ*/
+/* @media (min-width:720px) and (max-width:960px){ */
+@media (min-width:720px) {
+header{
+  height: 60px;
+}
+.clear{
+  padding-top: 60px;
+
+}
+  nav {
+  
+    ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    /* 子要素を左揃えにする（例では使っていません） */
+    justify-content: flex-end;
+    /* 子要素を右揃えにする */
+    justify-content: space-around;
+    /* 子要素を均等配置にする */
+    justify-content: center;
+    /* 子要素を中央揃えにする */
+    margin: 0;
+    padding: 6px;
+    list-style-type: none;
+  }
+
+  .btn-trigger{
+    display: none;
+  }
+
+  li:last-child {
+    padding-bottom: 0px;
+  }
+}
+
+
+  .nav-item {
+    display: block;
+  }
+
+  .main {
+    background-color: yellow;
+  }
+
+  .top-bg {
+    /* background-image: url(../img/kngyo-bg.jpg); */
+    background:linear-gradient(70deg,rgba(255,255,0,0.4),rgba(0,191,255,0.4)),url(../img/kingyo-bg.jpg) no-repeat ;
+    padding-top: 0;
+      background-size: cover;
+      height: 694px;
+      width: 100%;
+      background-attachment: fixed;
+  }
+  
+body{
+  background:linear-gradient(70deg,rgba(255,255,0,0.4),rgba(0,191,255,0.4)),url(../img/kingyo-bg.jpg) no-repeat ;
+    padding-top: 0;
+      background-size: cover;
+      height: 694px;
+      width: 100%;
+      background-attachment: fixed;
+}
+
+  .about-item{
+    width:40%;
+  }
+}
+
+/*デスクトップサイズ*/
+/* @media (min-width:960px) and (max-width:1140px) { */
+@media (min-width:960px) {
+  .main {
+    background-color: blue;
+  }
+}
+
+/*大画面サイズ*/
+@media (min-width:1140px) {
+  .main {
+    background-color: red;
+  }
+
+
+}
